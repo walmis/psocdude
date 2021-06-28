@@ -771,6 +771,16 @@ part
   memory "signature"
     size = 2;
   ;
+   memory "flash"
+    paged     = yes;
+    size      = 16384;
+    page_size = 64;
+    num_pages = 256;
+    mode      = 0x41;
+    delay     = 6;
+    blocksize = 64;
+    readsize  = 64;
+  ;
 ;
 
 #------------------------------------------------------------
